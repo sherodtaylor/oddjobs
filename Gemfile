@@ -7,6 +7,8 @@ gem 'rails', '3.2.10'
 
 gem 'sqlite3'
 gem 'devise'
+gem 'twilio-ruby'
+
 group :development, :test do
   gem 'rspec-rails'
 

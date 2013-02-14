@@ -1,7 +1,7 @@
 Oddjobs::Application.routes.draw do
   get "pages/home"
 
-  devise_for :jobseekers
+  devise_for :jobseekers, :controllers => {:registrations => "registrations"}
   resources :oddjobs 
   # Sample of regular route:
    

@@ -1,9 +1,11 @@
 Oddjobs::Application.routes.draw do
+  get "pages/home"
+
   devise_for :jobseekers
   resources :oddjobs 
   # Sample of regular route:
-  
-  root :to => 'oddjobs#new'
+   
+  root :to => 'pages#index'
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 

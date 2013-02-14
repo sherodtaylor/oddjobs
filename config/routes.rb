@@ -1,7 +1,5 @@
 Oddjobs::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-
+  devise_for :jobseekers
   resources :oddjobs 
   # Sample of regular route:
   

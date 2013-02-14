@@ -1,0 +1,2 @@
+module OddjobsHelper
+end

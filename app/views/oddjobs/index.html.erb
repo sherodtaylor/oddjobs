@@ -1,0 +1,28 @@
+<h1>Listing oddjobs</h1>
+ 
+<table>
+  <tr>
+    <th>Job</th>
+    <th>Company</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+ 
+<% @oddjobs.each do |oddjob| %>
+  <tr>
+    <td><%= oddjob.job %></td>
+    <td><%= oddjob.company %></td>
+    <td><%= oddjob.description %></td>
+    <td><%= link_to 'Show', oddjob %></td>
+    <td><%= link_to 'Edit', edit_oddjob_path(oddjob) %></td>
+    <td><%= link_to 'Destroy', oddjob, :confirm => 'Are you sure?',
+                                     :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+ 
+<br />
+ 
+<%= link_to 'New oddjob', new_oddjob_path %>

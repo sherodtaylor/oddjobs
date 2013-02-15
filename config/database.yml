@@ -20,6 +20,9 @@ test:
 
 production:
   adapter: postgresql
-  database: nannynow
-  username: sherodtaylor
-  password: battle321
+  encoding: unicode
+  database: oddjobs
+  pool: 5
+  username: postgres
+  password: 
+  host: localhost
